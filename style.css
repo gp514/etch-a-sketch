@@ -1,17 +1,59 @@
+body {
+    background: url("https://images.pexels.com/photos/691710/pexels-photo-691710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-repeat: repeat;
+    background-size: 100%;
+    margin: 0;
+}
 
+.outer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 650px;
+    margin: 25px auto;
+    border: 1px solid #616161;
+    box-shadow:
+        2px 2px 6px 3px rgba(0, 0, 0, 0.4),
+        1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 25px 25px 10px 10px;
+    text-align: center;
+    background: #cb2d3e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.outer-container span {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-family: Righteous;
+    letter-spacing: 0.3em;
+    color: #352c22;
+    font-weight: 700;
+    font-size: 36px;
+}
 
 .container {
     width: 480px;
     height: 480px;
     display: grid;
-    margin: 100px auto;
+    margin: 0 auto;
     background-color: rgb(73, 73, 73);
     column-gap: 1px;
     row-gap: 1px;
-    border: 1px rgb(73, 73, 73) solid;
+    border: 5px rgb(73, 73, 73) solid;
+    border-radius: 5px;
 }
 
 .container * {
     background-color: white;
     border-radius: 10%;
+}
+
+.outer-container button {
+    align-self: flex-end;
+    margin-right: 60px;
+    margin-top: 10px;
 }
