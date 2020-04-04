@@ -1,0 +1,17 @@
+
+
+.container {
+    width: 480px;
+    height: 480px;
+    display: grid;
+    margin: 100px auto;
+    background-color: rgb(73, 73, 73);
+    column-gap: 1px;
+    row-gap: 1px;
+    border: 1px rgb(73, 73, 73) solid;
+}
+
+.container * {
+    background-color: white;
+    border-radius: 10%;
+}
